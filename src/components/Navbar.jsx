@@ -23,7 +23,9 @@ const Navbar = () => {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li>
-                  <img src={Logo} alt="" className="img-fluid" style={{ maxWidth: "80%" }} />
+                  <div className="d-flex justify-content-center">
+                    <img src={Logo} alt="" className="img-fluid" style={{ maxWidth: "80%" }} />
+                  </div>
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,25 +46,8 @@ const Navbar = () => {
                 </li>
               </ul>
               <form className="d-flex mt-3" role="search">
-                <input
-                  className="form-control me-2"
-                  // type="search"
-                  // placeholder="Cari Dong"
-                  // aria-label="Search"
-                  // onChange={(event) => {
-                  //   setSearch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`);
-                  // }}
-                />
-                <button
-                  className="btn btn-success"
-                  // type="submit"
-                  // onClick={() => {
-                  //   setSearchUrl(search);
-                  //   setSearchPokemon("render");
-                  // }}
-                >
-                  Search
-                </button>
+                <input className="form-control me-2" />
+                <button className="btn btn-success">Search</button>
               </form>
             </div>
           </div>
